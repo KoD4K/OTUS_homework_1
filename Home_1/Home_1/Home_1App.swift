@@ -11,7 +11,9 @@ import SwiftUI
 struct Home_1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootScreen()
+                .environmentObject(Router())
+                .environmentObject(ListScreenViewModel())
         }
     }
 }
